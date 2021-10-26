@@ -29,6 +29,16 @@ glob("**/sync-reversal*", options, function (er, files) {
          fs.unlinkSync(file);
         //console.log(`File is no: ${file}`);
     }
-})
+});
+
+glob("**/sync-investment*", options, function (er, files) {
+    for (const file of files) {
+         // remove file
+         fs.unlinkSync(file);
+        //console.log(`File is no: ${file}`);
+    }
+});
+
+
 
 
